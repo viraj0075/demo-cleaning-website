@@ -190,7 +190,7 @@ export default function Pricing() {
                   </div>
                   <div className="flex text-yellow-400 gap-0.5 text-xs sm:text-sm">
                     {[...Array(premium.testimonial.rating)].map((_, i) => (
-                      <AiFillStar key={i} />
+                      <AiFillStar key={i} className="text-yellow-400" />
                     ))}
                   </div>
                 </div>

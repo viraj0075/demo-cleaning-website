@@ -64,7 +64,10 @@ export default function Testimonials() {
                 {/* Star Rating */}
                 <div className="flex text-yellow-400 gap-1 mb-4">
                   {[...Array(rev.rating)].map((_, i) => (
-                    <AiFillStar key={i} className="h-4.5 w-4.5" />
+                    <AiFillStar
+                      key={i}
+                      className="h-4.5 w-4.5 text-yellow-400"
+                    />
                   ))}
                 </div>
 

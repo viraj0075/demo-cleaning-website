@@ -14,25 +14,25 @@ export default function Hero() {
         <ContainerLayout>
           {/* Top Rating Badge */}
           <div className="flex items-center justify-center lg:justify-start gap-2 mb-6">
-            <AiFillStar className="text-emerald-400 h-4 w-4" />
+            <AiFillStar className="text-yellow-400 h-4 w-4 shrink-0" />
             <span className="text-white/90 text-xs sm:text-sm font-semibold tracking-wide">
               4.8/5 star on Trustpilot
             </span>
           </div>
 
           {/* 2-Column Header Flexbox Row */}
-          <div className="flex flex-col lg:flex-row items-start justify-between gap-8 lg:gap-12 mb-12 sm:mb-16">
+          <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-8  mb-12 sm:mb-16">
             {/* Left Giant Headline */}
-            <div className="flex-1 max-w-2xl">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.12]">
+            <div className="flex-1 max-w-2xl lg:max-w-3xl xl:max-w-4xl mx-auto lg:mx-0">
+              <h1 className="text-4xl md:text-5xl xl:text-6xl font-extrabold tracking-tight text-white leading-[1.12]">
                 Bringing freshness <br />
                 to <span className="text-lime-400">every</span> little corner.
               </h1>
             </div>
 
             {/* Right Description & Action Buttons */}
-            <div className="flex-1 max-w-lg space-y-6 lg:pt-2">
-              <p className="text-white/80 text-sm sm:text-base leading-relaxed font-medium max-w-lg">
+            <div className="flex-1 max-w-lg space-y-6 lg:pt-2 mx-auto lg:mx-0">
+              <p className="text-white/80 text-sm sm:text-base lg:text-lg xl:text-xl leading-relaxed font-medium max-w-lg mx-auto lg:mx-0">
                 Experience meticulous cleaning that refreshes your home,
                 enhances comfort, and brings care into every corner.
               </p>
@@ -41,10 +41,10 @@ export default function Hero() {
                 {/* Book Now Lime Pill Button */}
                 <button
                   onClick={() => navigate("/quote")}
-                  className="bg-lime-400 hover:bg-lime-300 text-gray-950 font-black px-7 sm:px-9 py-3.5 sm:py-4 rounded-full inline-flex items-center gap-3.5 transition-all duration-300 shadow-xl shadow-lime-400/20 hover:scale-105 cursor-pointer text-sm sm:text-base group"
+                  className="bg-lime-400 hover:bg-lime-300 text-gray-950 font-black px-5 sm:px-6 lg:px-8 py-2.5 sm:py-3 lg:py-3.5 rounded-full inline-flex items-center gap-3 transition-all duration-300 shadow-xl shadow-lime-400/20 hover:scale-105 cursor-pointer text-xs sm:text-sm lg:text-base group"
                 >
                   <span>Book Now</span>
-                  <span className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-gray-950 text-white flex items-center justify-center text-sm group-hover:translate-x-0.5 transition-transform">
+                  <span className="w-7 h-7 sm:w-8 sm:h-8 lg:w-9 lg:h-9 rounded-full bg-gray-950 text-white flex items-center justify-center text-xs sm:text-sm group-hover:translate-x-0.5 transition-transform">
                     <FiArrowRight className="stroke-[2.5]" />
                   </span>
                 </button>
@@ -55,7 +55,7 @@ export default function Hero() {
                     const el = document.getElementById("about");
                     el?.scrollIntoView({ behavior: "smooth" });
                   }}
-                  className="text-white hover:text-lime-400 text-xs sm:text-sm font-bold inline-flex items-center gap-1 transition-colors cursor-pointer group py-2"
+                  className="text-white hover:text-lime-400 text-xs sm:text-sm lg:text-base font-bold inline-flex items-center gap-1 transition-colors cursor-pointer group py-2"
                 >
                   <span>Learn more</span>
                   <FiChevronRight className="h-4 w-4 group-hover:translate-x-1 transition-transform text-white/70 group-hover:text-lime-400" />
