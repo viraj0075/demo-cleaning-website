@@ -12,7 +12,6 @@ export default function Hero() {
     <section className="relative overflow-hidden bg-[#0A1F1C] text-white">
       <div className="pt-28 sm:pt-36 lg:pt-40 pb-16 sm:pb-20 text-center md:text-left">
         <ContainerLayout>
-
           {/* Top Rating Badge */}
           <div className="flex items-center justify-center lg:justify-start gap-2 mb-6">
             <AiFillStar className="text-emerald-400 h-4 w-4" />
@@ -23,7 +22,6 @@ export default function Hero() {
 
           {/* 2-Column Header Row */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start mb-12 sm:mb-16">
-
             {/* Left Giant Headline */}
             <div className="lg:col-span-7">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.12]">
@@ -35,13 +33,14 @@ export default function Hero() {
             {/* Right Description & Action Buttons */}
             <div className="lg:col-span-5 space-y-6 lg:pt-2">
               <p className="text-white/80 text-sm sm:text-base leading-relaxed font-medium max-w-lg">
-                Experience meticulous cleaning that refreshes your home, enhances comfort, and brings care into every corner.
+                Experience meticulous cleaning that refreshes your home,
+                enhances comfort, and brings care into every corner.
               </p>
 
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 sm:gap-6 pt-1">
                 {/* Book Now Lime Pill Button */}
                 <button
-                  onClick={() => navigate('/quote')}
+                  onClick={() => navigate("/quote")}
                   className="bg-lime-400 hover:bg-lime-300 text-gray-950 font-black px-7 sm:px-9 py-3.5 sm:py-4 rounded-full inline-flex items-center gap-3.5 transition-all duration-300 shadow-xl shadow-lime-400/20 hover:scale-105 cursor-pointer text-sm sm:text-base group"
                 >
                   <span>Book Now</span>
@@ -53,8 +52,8 @@ export default function Hero() {
                 {/* Learn More Text Link */}
                 <button
                   onClick={() => {
-                    const el = document.getElementById('about');
-                    el?.scrollIntoView({ behavior: 'smooth' });
+                    const el = document.getElementById("about");
+                    el?.scrollIntoView({ behavior: "smooth" });
                   }}
                   className="text-white hover:text-lime-400 text-xs sm:text-sm font-bold inline-flex items-center gap-1 transition-colors cursor-pointer group py-2"
                 >
@@ -63,7 +62,6 @@ export default function Hero() {
                 </button>
               </div>
             </div>
-
           </div>
 
           {/* Infinite Image Marquee Slider */}
@@ -94,9 +92,7 @@ export default function Hero() {
               ))}
             </div>
           </div>
-
         </ContainerLayout>
-
       </div>
     </section>
   );

@@ -1,7 +1,12 @@
-import { Link } from 'react-router-dom';
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
-import { HiSparkles } from 'react-icons/hi2';
-import ContainerLayout from './ContainerLayout';
+import { Link } from "react-router-dom";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedinIn,
+} from "react-icons/fa";
+import { HiSparkles } from "react-icons/hi2";
+import ContainerLayout from "./ContainerLayout";
 
 export default function Footer() {
   return (
@@ -9,7 +14,6 @@ export default function Footer() {
       <ContainerLayout>
         <div className="py-12 sm:py-16 lg:py-20">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 lg:gap-10">
-
             {/* Brand Col */}
             <div className="sm:col-span-2 space-y-4 text-center sm:text-left flex flex-col items-center sm:items-start">
               <Link to="/" className="inline-flex items-center gap-2 group">
@@ -21,14 +25,16 @@ export default function Footer() {
                 </span>
               </Link>
               <p className="text-white/75 text-xs sm:text-sm leading-relaxed max-w-xs font-medium">
-                Connecting you with certified, vetted local cleaning professionals. 100% satisfaction guaranteed for sparkling home & office spaces.
+                Connecting you with certified, vetted local cleaning
+                professionals. 100% satisfaction guaranteed for sparkling home &
+                office spaces.
               </p>
               <div className="flex justify-center sm:justify-start space-x-3 pt-2">
                 {[
-                  { icon: <FaFacebookF />, url: '#', name: 'Facebook' },
-                  { icon: <FaTwitter />, url: '#', name: 'Twitter' },
-                  { icon: <FaInstagram />, url: '#', name: 'Instagram' },
-                  { icon: <FaLinkedinIn />, url: '#', name: 'LinkedIn' },
+                  { icon: <FaFacebookF />, url: "#", name: "Facebook" },
+                  { icon: <FaTwitter />, url: "#", name: "Twitter" },
+                  { icon: <FaInstagram />, url: "#", name: "Instagram" },
+                  { icon: <FaLinkedinIn />, url: "#", name: "LinkedIn" },
                 ].map((social, index) => (
                   <a
                     key={index}
@@ -44,30 +50,47 @@ export default function Footer() {
 
             {/* Company Links Col */}
             <div className="text-center sm:text-left">
-              <h4 className="font-extrabold text-lime-400 text-xs sm:text-sm uppercase tracking-wider mb-4">Company</h4>
+              <h4 className="font-extrabold text-lime-400 text-xs sm:text-sm uppercase tracking-wider mb-4">
+                Company
+              </h4>
               <ul className="space-y-2.5 text-xs sm:text-sm text-white/80 font-medium">
                 <li>
-                  <Link to="/" className="hover:text-lime-400 transition-colors">
+                  <Link
+                    to="/"
+                    className="hover:text-lime-400 transition-colors"
+                  >
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link to="/#about" className="hover:text-lime-400 transition-colors">
+                  <Link
+                    to="/#about"
+                    className="hover:text-lime-400 transition-colors"
+                  >
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link to="/#pricing" className="hover:text-lime-400 transition-colors">
+                  <Link
+                    to="/#pricing"
+                    className="hover:text-lime-400 transition-colors"
+                  >
                     Pricing Plans
                   </Link>
                 </li>
                 <li>
-                  <Link to="/#testimonials" className="hover:text-lime-400 transition-colors">
+                  <Link
+                    to="/#testimonials"
+                    className="hover:text-lime-400 transition-colors"
+                  >
                     Customer Reviews
                   </Link>
                 </li>
                 <li>
-                  <Link to="/quote" className="hover:text-lime-400 transition-colors">
+                  <Link
+                    to="/quote"
+                    className="hover:text-lime-400 transition-colors"
+                  >
                     Book Appointment
                   </Link>
                 </li>
@@ -76,17 +99,22 @@ export default function Footer() {
 
             {/* Services Col */}
             <div className="text-center sm:text-left">
-              <h4 className="font-extrabold text-lime-400 text-xs sm:text-sm uppercase tracking-wider mb-4">Services</h4>
+              <h4 className="font-extrabold text-lime-400 text-xs sm:text-sm uppercase tracking-wider mb-4">
+                Services
+              </h4>
               <ul className="space-y-2.5 text-xs sm:text-sm text-white/80 font-medium">
                 {[
-                  { name: 'Basic Clean', plan: 'basic-clean' },
-                  { name: 'Premium Clean', plan: 'premium-clean' },
-                  { name: 'Office Cleaning', plan: 'office-cleaning' },
-                  { name: 'Deep / Spring Clean', plan: 'deep-spring-clean' },
-                  { name: 'Carpet & Window', plan: 'carpet-window-care' },
+                  { name: "Basic Clean", plan: "basic-clean" },
+                  { name: "Premium Clean", plan: "premium-clean" },
+                  { name: "Office Cleaning", plan: "office-cleaning" },
+                  { name: "Deep / Spring Clean", plan: "deep-spring-clean" },
+                  { name: "Carpet & Window", plan: "carpet-window-care" },
                 ].map((item, idx) => (
                   <li key={idx}>
-                    <Link to={`/quote?plan=${item.plan}`} className="hover:text-lime-400 transition-colors">
+                    <Link
+                      to={`/quote?plan=${item.plan}`}
+                      className="hover:text-lime-400 transition-colors"
+                    >
                       {item.name}
                     </Link>
                   </li>
@@ -96,22 +124,36 @@ export default function Footer() {
 
             {/* Support / Contact Col */}
             <div className="text-center sm:text-left">
-              <h4 className="font-extrabold text-lime-400 text-xs sm:text-sm uppercase tracking-wider mb-4">Contact Support</h4>
+              <h4 className="font-extrabold text-lime-400 text-xs sm:text-sm uppercase tracking-wider mb-4">
+                Contact Support
+              </h4>
               <ul className="space-y-3 text-xs sm:text-sm text-white/80 font-medium">
                 <li>
-                  <span className="block text-[10px] uppercase text-white/50 font-black">Call Us</span>
-                  <a href="tel:+18005553264" className="text-white hover:text-lime-400 text-xs sm:text-sm font-bold mt-0.5 block transition-colors">
+                  <span className="block text-[10px] uppercase text-white/50 font-black">
+                    Call Us
+                  </span>
+                  <a
+                    href="tel:+18005553264"
+                    className="text-white hover:text-lime-400 text-xs sm:text-sm font-bold mt-0.5 block transition-colors"
+                  >
                     +1 (800) 555-3264
                   </a>
                 </li>
                 <li>
-                  <span className="block text-[10px] uppercase text-white/50 font-black">Email</span>
-                  <a href="mailto:support@cleanora.com" className="text-white hover:text-lime-400 text-xs sm:text-sm font-bold mt-0.5 block transition-colors">
+                  <span className="block text-[10px] uppercase text-white/50 font-black">
+                    Email
+                  </span>
+                  <a
+                    href="mailto:support@cleanora.com"
+                    className="text-white hover:text-lime-400 text-xs sm:text-sm font-bold mt-0.5 block transition-colors"
+                  >
                     support@cleanora.com
                   </a>
                 </li>
                 <li>
-                  <span className="block text-[10px] uppercase text-white/50 font-black">Location</span>
+                  <span className="block text-[10px] uppercase text-white/50 font-black">
+                    Location
+                  </span>
                   <span className="text-white/90 text-xs sm:text-sm font-bold mt-0.5 block">
                     100 Clean Street, Suite 400, Chicago, IL
                   </span>
@@ -124,10 +166,16 @@ export default function Footer() {
           <div className="pt-8 sm:pt-12 mt-8 sm:mt-12 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs text-white/70 font-medium gap-4 text-center sm:text-left">
             <p>© 2026 Cleanora Inc. All rights reserved.</p>
             <div className="flex space-x-6">
-              <Link to="/privacy" className="hover:text-lime-400 transition-colors">
+              <Link
+                to="/privacy"
+                className="hover:text-lime-400 transition-colors"
+              >
                 Privacy Policy
               </Link>
-              <Link to="/terms" className="hover:text-lime-400 transition-colors">
+              <Link
+                to="/terms"
+                className="hover:text-lime-400 transition-colors"
+              >
                 Terms of Service
               </Link>
             </div>

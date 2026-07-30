@@ -1,32 +1,35 @@
-import React from 'react';
-import { FiArrowRight, FiClock, FiCalendar } from 'react-icons/fi';
-import ContainerLayout from './ContainerLayout';
+import React from "react";
+import { FiArrowRight, FiClock, FiCalendar } from "react-icons/fi";
+import ContainerLayout from "./ContainerLayout";
 
 export default function Blog() {
   const blogs = [
     {
-      title: 'The Ultimate Guide to Eco-Friendly Cleaning Products',
-      desc: 'Discover why switching to green and organic cleaning products benefits your health, your family, and the planet.',
-      image: 'https://images.unsplash.com/photo-1607344645866-009c320c5ab8?auto=format&fit=crop&q=80&w=600',
-      date: 'May 12, 2026',
-      readTime: '5 min read',
-      category: 'Guides',
+      title: "The Ultimate Guide to Eco-Friendly Cleaning Products",
+      desc: "Discover why switching to green and organic cleaning products benefits your health, your family, and the planet.",
+      image:
+        "https://images.unsplash.com/photo-1607344645866-009c320c5ab8?auto=format&fit=crop&q=80&w=600",
+      date: "May 12, 2026",
+      readTime: "5 min read",
+      category: "Guides",
     },
     {
-      title: 'How to Maintain a Clean and Productive Office Space',
-      desc: 'Simple routines and organization habits to keep your workplace hygienic, tidy, and motivating for employees.',
-      image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=600',
-      date: 'Apr 28, 2026',
-      readTime: '4 min read',
-      category: 'Office Care',
+      title: "How to Maintain a Clean and Productive Office Space",
+      desc: "Simple routines and organization habits to keep your workplace hygienic, tidy, and motivating for employees.",
+      image:
+        "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=600",
+      date: "Apr 28, 2026",
+      readTime: "4 min read",
+      category: "Office Care",
     },
     {
-      title: '5 Quick and Easy Weekly Home Cleaning Routines',
-      desc: 'Banish dust and grime with a simple, high-efficiency weekly cleaning checklist designed for busy modern professionals.',
-      image: 'https://images.unsplash.com/photo-1584824486509-112e4181ff6b?auto=format&fit=crop&q=80&w=600',
-      date: 'Mar 15, 2026',
-      readTime: '6 min read',
-      category: 'Tips',
+      title: "5 Quick and Easy Weekly Home Cleaning Routines",
+      desc: "Banish dust and grime with a simple, high-efficiency weekly cleaning checklist designed for busy modern professionals.",
+      image:
+        "https://images.unsplash.com/photo-1584824486509-112e4181ff6b?auto=format&fit=crop&q=80&w=600",
+      date: "Mar 15, 2026",
+      readTime: "6 min read",
+      category: "Tips",
     },
   ];
 

@@ -1,6 +1,6 @@
-import { FiCheck } from 'react-icons/fi';
-import ContainerLayout from './ContainerLayout';
-import { REASONS_DATA } from '../constants/data';
+import { FiCheck } from "react-icons/fi";
+import ContainerLayout from "./ContainerLayout";
+import { REASONS_DATA } from "../constants/data";
 
 export default function WhyChoice() {
   const reasons = REASONS_DATA;
@@ -21,7 +21,9 @@ export default function WhyChoice() {
             </div>
 
             <p className="text-gray-600 text-sm sm:text-base font-medium leading-relaxed text-center md:text-left">
-              We know cleaning is a personal service. That's why we take the time to recruit and train only the best professionals in the market, backed by our ironclad guarantees.
+              We know cleaning is a personal service. That's why we take the
+              time to recruit and train only the best professionals in the
+              market, backed by our ironclad guarantees.
             </p>
 
             <div className="pt-2 divide-y divide-gray-100">
@@ -33,8 +35,12 @@ export default function WhyChoice() {
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-base sm:text-lg font-black text-gray-950 mb-1">{reason.title}</h3>
-                    <p className="text-gray-600 text-xs sm:text-sm font-medium leading-relaxed">{reason.desc}</p>
+                    <h3 className="text-base sm:text-lg font-black text-gray-950 mb-1">
+                      {reason.title}
+                    </h3>
+                    <p className="text-gray-600 text-xs sm:text-sm font-medium leading-relaxed">
+                      {reason.desc}
+                    </p>
                   </div>
                 </div>
               ))}
@@ -53,7 +59,8 @@ export default function WhyChoice() {
               <div className="hidden lg:block absolute bottom-6 right-6 bg-[#0A1F1C] text-white p-6 rounded-xl sm:rounded-2xl shadow-2xl max-w-xs border border-white/15 backdrop-blur-md">
                 <p className="text-3xl font-black text-lime-400">99.8%</p>
                 <p className="text-xs font-semibold text-white/80 mt-1 leading-relaxed">
-                  Of our clients recommend our services to friends and neighbors.
+                  Of our clients recommend our services to friends and
+                  neighbors.
                 </p>
               </div>
             </div>

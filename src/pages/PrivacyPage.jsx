@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
-import ContainerLayout from '../components/ContainerLayout';
+import { useEffect } from "react";
+import ContainerLayout from "../components/ContainerLayout";
 
 export default function PrivacyPage() {
   useEffect(() => {
@@ -22,37 +22,63 @@ export default function PrivacyPage() {
 
           <div className="space-y-6 text-gray-600 text-sm sm:text-base leading-relaxed">
             <section className="space-y-3">
-              <h2 className="text-lg sm:text-xl font-bold text-gray-950">1. Information We Collect</h2>
+              <h2 className="text-lg sm:text-xl font-bold text-gray-950">
+                1. Information We Collect
+              </h2>
               <p>
-                We collect personal information that you voluntarily provide to us when you register on our website, request a cleaning quote, or schedule an appointment. This information may include your name, email address, phone number, and physical billing/cleaning address.
+                We collect personal information that you voluntarily provide to
+                us when you register on our website, request a cleaning quote,
+                or schedule an appointment. This information may include your
+                name, email address, phone number, and physical billing/cleaning
+                address.
               </p>
             </section>
 
             <section className="space-y-3">
-              <h2 className="text-lg sm:text-xl font-bold text-gray-950">2. How We Use Your Information</h2>
+              <h2 className="text-lg sm:text-xl font-bold text-gray-950">
+                2. How We Use Your Information
+              </h2>
               <p>
-                We use the information we collect to provide and maintain our professional cleaning services, communicate updates, send service reminders, issue invoices, and process payments securely. We do not sell or share your personal data with third parties for promotional purposes.
+                We use the information we collect to provide and maintain our
+                professional cleaning services, communicate updates, send
+                service reminders, issue invoices, and process payments
+                securely. We do not sell or share your personal data with third
+                parties for promotional purposes.
               </p>
             </section>
 
             <section className="space-y-3">
-              <h2 className="text-lg sm:text-xl font-bold text-gray-950">3. Cookies and Tracking</h2>
+              <h2 className="text-lg sm:text-xl font-bold text-gray-950">
+                3. Cookies and Tracking
+              </h2>
               <p>
-                Our site uses essential security and analytics cookies to enhance user experience and understand how visitors interact with our features. You can configure your browser to reject cookies, though some features of the booking portal may not function properly.
+                Our site uses essential security and analytics cookies to
+                enhance user experience and understand how visitors interact
+                with our features. You can configure your browser to reject
+                cookies, though some features of the booking portal may not
+                function properly.
               </p>
             </section>
 
             <section className="space-y-3">
-              <h2 className="text-lg sm:text-xl font-bold text-gray-950">4. Vetted Security</h2>
+              <h2 className="text-lg sm:text-xl font-bold text-gray-950">
+                4. Vetted Security
+              </h2>
               <p>
-                We enforce enterprise-grade electronic and operational security protocols to protect your billing details and address information. All online financial transactions are encrypted using secure socket layer technology (SSL).
+                We enforce enterprise-grade electronic and operational security
+                protocols to protect your billing details and address
+                information. All online financial transactions are encrypted
+                using secure socket layer technology (SSL).
               </p>
             </section>
 
             <section className="space-y-3">
-              <h2 className="text-lg sm:text-xl font-bold text-gray-950">5. Contact Support</h2>
+              <h2 className="text-lg sm:text-xl font-bold text-gray-950">
+                5. Contact Support
+              </h2>
               <p>
-                If you have questions about this policy or want to update/remove your account information, please contact our legal team at:
+                If you have questions about this policy or want to update/remove
+                your account information, please contact our legal team at:
               </p>
               <p className="font-semibold text-gray-950">
                 Email: support@cleanora.com <br />

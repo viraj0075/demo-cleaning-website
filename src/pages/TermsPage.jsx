@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
-import ContainerLayout from '../components/ContainerLayout';
+import { useEffect } from "react";
+import ContainerLayout from "../components/ContainerLayout";
 
 export default function TermsPage() {
   useEffect(() => {
@@ -22,37 +22,63 @@ export default function TermsPage() {
 
           <div className="space-y-6 text-gray-600 text-sm sm:text-base leading-relaxed">
             <section className="space-y-3">
-              <h2 className="text-lg sm:text-xl font-bold text-gray-950">1. Services and Scope</h2>
+              <h2 className="text-lg sm:text-xl font-bold text-gray-950">
+                1. Services and Scope
+              </h2>
               <p>
-                Cleanora connects users with certified, vetted, background-checked professional home and office cleaners. All appointments booked through this portal are subject to team availability and cleaning suitability assessments.
+                Cleanora connects users with certified, vetted,
+                background-checked professional home and office cleaners. All
+                appointments booked through this portal are subject to team
+                availability and cleaning suitability assessments.
               </p>
             </section>
 
             <section className="space-y-3">
-              <h2 className="text-lg sm:text-xl font-bold text-gray-950">2. Cancellation Policy</h2>
+              <h2 className="text-lg sm:text-xl font-bold text-gray-950">
+                2. Cancellation Policy
+              </h2>
               <p>
-                To provide fair schedules for our professional crew, any changes or cancellations to scheduled cleaning appointments must be requested at least 24 hours in advance. Cancellations made inside the 24-hour window may incur a standard $45 cancellation fee.
+                To provide fair schedules for our professional crew, any changes
+                or cancellations to scheduled cleaning appointments must be
+                requested at least 24 hours in advance. Cancellations made
+                inside the 24-hour window may incur a standard $45 cancellation
+                fee.
               </p>
             </section>
 
             <section className="space-y-3">
-              <h2 className="text-lg sm:text-xl font-bold text-gray-950">3. Access to Property</h2>
+              <h2 className="text-lg sm:text-xl font-bold text-gray-950">
+                3. Access to Property
+              </h2>
               <p>
-                Clients must provide reliable access to the premises at the scheduled cleaning time. If the cleaning team is locked out and cannot gain entry after 20 minutes of arrival, the cleaning session will be cancelled and billed as a late lockout fee.
+                Clients must provide reliable access to the premises at the
+                scheduled cleaning time. If the cleaning team is locked out and
+                cannot gain entry after 20 minutes of arrival, the cleaning
+                session will be cancelled and billed as a late lockout fee.
               </p>
             </section>
 
             <section className="space-y-3">
-              <h2 className="text-lg sm:text-xl font-bold text-gray-950">4. Satisfaction Guarantee</h2>
+              <h2 className="text-lg sm:text-xl font-bold text-gray-950">
+                4. Satisfaction Guarantee
+              </h2>
               <p>
-                We stand behind our work. If you are not satisfied with any area cleaned by our team, contact us within 24 hours, and we will dispatch a team to reclean the specific area free of charge. We do not issue cash refunds.
+                We stand behind our work. If you are not satisfied with any area
+                cleaned by our team, contact us within 24 hours, and we will
+                dispatch a team to reclean the specific area free of charge. We
+                do not issue cash refunds.
               </p>
             </section>
 
             <section className="space-y-3">
-              <h2 className="text-lg sm:text-xl font-bold text-gray-950">5. Liability Limits</h2>
+              <h2 className="text-lg sm:text-xl font-bold text-gray-950">
+                5. Liability Limits
+              </h2>
               <p>
-                While all staff undergo rigorous training and vetting, Cleanora is not liable for structural wear-and-tear, or pre-existing damages. Our total liability for any certified property damage is limited to the value of the cleaning services booked.
+                While all staff undergo rigorous training and vetting, Cleanora
+                is not liable for structural wear-and-tear, or pre-existing
+                damages. Our total liability for any certified property damage
+                is limited to the value of the cleaning services booked.
               </p>
             </section>
           </div>

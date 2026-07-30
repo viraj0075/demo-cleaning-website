@@ -1,8 +1,8 @@
-import { useRef } from 'react';
-import { AiFillStar } from 'react-icons/ai';
-import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
-import ContainerLayout from './ContainerLayout';
-import { REVIEWS_DATA } from '../constants/data';
+import { useRef } from "react";
+import { AiFillStar } from "react-icons/ai";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import ContainerLayout from "./ContainerLayout";
+import { REVIEWS_DATA } from "../constants/data";
 
 export default function Testimonials() {
   const scrollRef = useRef(null);
@@ -10,8 +10,8 @@ export default function Testimonials() {
   const scroll = (direction) => {
     if (scrollRef.current) {
       const cardWidth = 340;
-      const scrollAmount = direction === 'left' ? -cardWidth : cardWidth;
-      scrollRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      const scrollAmount = direction === "left" ? -cardWidth : cardWidth;
+      scrollRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
     }
   };
 
@@ -20,7 +20,6 @@ export default function Testimonials() {
   return (
     <section className="py-16 sm:py-24 bg-white" id="testimonials">
       <ContainerLayout>
-
         {/* Header with Navigation Buttons */}
         <div className="flex flex-row items-end justify-between mb-10 sm:mb-14 gap-4">
           <div className="space-y-3">
@@ -34,14 +33,14 @@ export default function Testimonials() {
 
           <div className="flex gap-2.5 shrink-0">
             <button
-              onClick={() => scroll('left')}
+              onClick={() => scroll("left")}
               className="bg-gray-100 border border-gray-200 text-gray-900 hover:bg-[#0A1F1C] hover:text-lime-400 p-3 rounded-full transition-all duration-300 cursor-pointer shadow-sm"
               aria-label="Scroll left"
             >
               <FiChevronLeft className="h-5 w-5" />
             </button>
             <button
-              onClick={() => scroll('right')}
+              onClick={() => scroll("right")}
               className="bg-gray-100 border border-gray-200 text-gray-900 hover:bg-[#0A1F1C] hover:text-lime-400 p-3 rounded-full transition-all duration-300 cursor-pointer shadow-sm"
               aria-label="Scroll right"
             >
@@ -54,7 +53,7 @@ export default function Testimonials() {
         <div
           ref={scrollRef}
           className="flex overflow-x-auto gap-5 sm:gap-6 pb-6 pt-2 scroll-smooth scrollbar-none snap-x snap-mandatory px-1 sm:px-0"
-          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
           {reviews.map((rev, idx) => (
             <div
@@ -83,8 +82,12 @@ export default function Testimonials() {
                   className="w-10 h-10 rounded-full object-cover border border-gray-200 shadow-sm"
                 />
                 <div>
-                  <h3 className="font-extrabold text-gray-950 text-sm">{rev.name}</h3>
-                  <p className="text-gray-400 text-xs font-medium">{rev.title}</p>
+                  <h3 className="font-extrabold text-gray-950 text-sm">
+                    {rev.name}
+                  </h3>
+                  <p className="text-gray-400 text-xs font-medium">
+                    {rev.title}
+                  </p>
                 </div>
               </div>
             </div>

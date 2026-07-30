@@ -1,8 +1,8 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { FiPlus, FiMinus, FiArrowRight } from 'react-icons/fi';
-import ContainerLayout from './ContainerLayout';
-import { FAQS_DATA } from '../constants/data';
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { FiPlus, FiMinus, FiArrowRight } from "react-icons/fi";
+import ContainerLayout from "./ContainerLayout";
+import { FAQS_DATA } from "../constants/data";
 
 export default function FAQ() {
   const [openIdx, setOpenIdx] = useState(0);
@@ -31,8 +31,8 @@ export default function FAQ() {
                   key={idx}
                   className={`border rounded-2xl transition-all duration-300 overflow-hidden ${
                     openIdx === idx
-                      ? 'bg-white border-[#0A1F1C] shadow-lg'
-                      : 'bg-white border-gray-200/80 hover:border-gray-400'
+                      ? "bg-white border-[#0A1F1C] shadow-lg"
+                      : "bg-white border-gray-200/80 hover:border-gray-400"
                   }`}
                 >
                   <button
@@ -42,15 +42,23 @@ export default function FAQ() {
                     <span>{faq.q}</span>
                     <span
                       className={`p-2 rounded-full transition-colors flex-shrink-0 ${
-                        openIdx === idx ? 'bg-[#0A1F1C] text-lime-400' : 'bg-gray-100 text-gray-700'
+                        openIdx === idx
+                          ? "bg-[#0A1F1C] text-lime-400"
+                          : "bg-gray-100 text-gray-700"
                       }`}
                     >
-                      {openIdx === idx ? <FiMinus className="h-4 w-4" /> : <FiPlus className="h-4 w-4" />}
+                      {openIdx === idx ? (
+                        <FiMinus className="h-4 w-4" />
+                      ) : (
+                        <FiPlus className="h-4 w-4" />
+                      )}
                     </span>
                   </button>
                   <div
                     className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                      openIdx === idx ? 'max-h-64 border-t border-gray-100' : 'max-h-0'
+                      openIdx === idx
+                        ? "max-h-64 border-t border-gray-100"
+                        : "max-h-0"
                     }`}
                   >
                     <p className="p-5 sm:p-6 text-xs sm:text-sm text-gray-600 leading-relaxed font-medium">
@@ -75,15 +83,18 @@ export default function FAQ() {
               </div>
 
               <div className="space-y-2">
-                <h3 className="text-xl font-black text-white">Expert Cleaning for Modern Living</h3>
+                <h3 className="text-xl font-black text-white">
+                  Expert Cleaning for Modern Living
+                </h3>
                 <p className="text-white/80 text-xs sm:text-sm leading-relaxed max-w-sm mx-auto font-medium">
-                  A professional team of 100+ vetted and background-checked cleaners are ready to transform your spaces today.
+                  A professional team of 100+ vetted and background-checked
+                  cleaners are ready to transform your spaces today.
                 </p>
               </div>
 
               <div className="flex justify-center w-full">
                 <button
-                  onClick={() => navigate('/quote')}
+                  onClick={() => navigate("/quote")}
                   className="w-full bg-lime-400 hover:bg-lime-300 text-gray-950 font-black py-4 rounded-full transition-all shadow-xl shadow-lime-400/20 flex items-center justify-center gap-3 hover:scale-105 cursor-pointer text-sm sm:text-base group"
                 >
                   <span>Book Now</span>

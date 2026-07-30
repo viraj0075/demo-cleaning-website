@@ -1,5 +1,5 @@
-import { useNavigate } from 'react-router-dom';
-import { FiArrowRight } from 'react-icons/fi';
+import { useNavigate } from "react-router-dom";
+import { FiArrowRight } from "react-icons/fi";
 
 export default function FooterHero() {
   const navigate = useNavigate();
@@ -25,11 +25,12 @@ export default function FooterHero() {
           Begins Now.
         </h2>
         <p className="text-white/80 text-xs sm:text-sm font-medium max-w-xl mx-auto leading-relaxed">
-          Request your customized cleaning estimate in under a minute and let our certified professionals take care of the heavy lifting.
+          Request your customized cleaning estimate in under a minute and let
+          our certified professionals take care of the heavy lifting.
         </p>
         <div className="pt-4 flex justify-center">
           <button
-            onClick={() => navigate('/quote')}
+            onClick={() => navigate("/quote")}
             className="bg-lime-400 hover:bg-lime-300 text-gray-950 font-black px-8 sm:px-10 py-4 sm:py-4.5 rounded-full transition-all shadow-2xl shadow-lime-400/25 hover:scale-105 flex items-center justify-center gap-3.5 cursor-pointer text-sm sm:text-base md:text-lg group"
           >
             <span>Get Started</span>
