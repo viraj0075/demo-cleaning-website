@@ -53,6 +53,8 @@ export default function WhyChoice() {
               <img
                 src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=800"
                 alt="Professional cleaner wearing gloves and holding eco-friendly spray bottle"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-100 lg:h-120 object-cover hover:scale-102 transition-transform duration-500"
               />
               {/* Overlay card */}

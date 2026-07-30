@@ -76,10 +76,12 @@ export default function FAQ() {
               <div className="h-44 sm:h-52 rounded-2xl overflow-hidden relative border border-white/10">
                 <img
                   src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&q=80&w=800"
-                  alt="Team of cleaners standing together smiling"
+                  alt="Friendly customer support team"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-[#0A1F1C]/20" />
+                <div className="absolute inset-0 bg-[#0A1F1C]/50 mix-blend-multiply" />
               </div>
 
               <div className="space-y-2">

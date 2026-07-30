@@ -11,6 +11,8 @@ export default function FooterHero() {
         <img
           src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200"
           alt="Spotless luxury interior background"
+          loading="lazy"
+          decoding="async"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-[#0A1F1C]/80 mix-blend-multiply" />

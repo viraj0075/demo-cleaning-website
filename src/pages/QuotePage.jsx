@@ -295,10 +295,14 @@ export default function QuotePage() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-1.5">
-                  <label className="text-xs font-bold text-green-medium flex items-center gap-1.5">
-                    <FiUser className="text-green-dark" /> Full Name
+                  <label
+                    htmlFor="full-name-input"
+                    className="text-xs font-bold text-gray-900 flex items-center gap-1.5"
+                  >
+                    <FiUser className="text-[#0A1F1C]" /> Full Name
                   </label>
                   <input
+                    id="full-name-input"
                     type="text"
                     placeholder="John Doe"
                     value={fullName}
@@ -307,10 +311,10 @@ export default function QuotePage() {
                       if (errors.fullName)
                         setErrors({ ...errors, fullName: null });
                     }}
-                    className={`w-full bg-gray-50/80 border rounded-xl px-3.5 py-3 text-xs sm:text-sm text-green-medium focus:outline-none font-semibold transition-colors ${
+                    className={`w-full bg-gray-50/80 border rounded-xl px-3.5 py-3 text-xs sm:text-sm text-gray-900 focus:outline-none font-semibold transition-colors ${
                       errors.fullName
                         ? "border-red-400 bg-red-50/20"
-                        : "border-gray-200 focus:border-green-dark"
+                        : "border-gray-200 focus:border-[#0A1F1C]"
                     }`}
                   />
                   {errors.fullName && (
@@ -321,10 +325,14 @@ export default function QuotePage() {
                 </div>
 
                 <div className="space-y-1.5">
-                  <label className="text-xs font-bold text-green-medium flex items-center gap-1.5">
-                    <FiMail className="text-green-dark" /> Email Address
+                  <label
+                    htmlFor="email-input"
+                    className="text-xs font-bold text-gray-900 flex items-center gap-1.5"
+                  >
+                    <FiMail className="text-[#0A1F1C]" /> Email Address
                   </label>
                   <input
+                    id="email-input"
                     type="email"
                     placeholder="john@example.com"
                     value={email}
@@ -332,10 +340,10 @@ export default function QuotePage() {
                       setEmail(e.target.value);
                       if (errors.email) setErrors({ ...errors, email: null });
                     }}
-                    className={`w-full bg-gray-50/80 border rounded-xl px-3.5 py-3 text-xs sm:text-sm text-green-medium focus:outline-none font-semibold transition-colors ${
+                    className={`w-full bg-gray-50/80 border rounded-xl px-3.5 py-3 text-xs sm:text-sm text-gray-900 focus:outline-none font-semibold transition-colors ${
                       errors.email
                         ? "border-red-400 bg-red-50/20"
-                        : "border-gray-200 focus:border-green-dark"
+                        : "border-gray-200 focus:border-[#0A1F1C]"
                     }`}
                   />
                   {errors.email && (
@@ -346,10 +354,14 @@ export default function QuotePage() {
                 </div>
 
                 <div className="space-y-1.5">
-                  <label className="text-xs font-bold text-green-medium flex items-center gap-1.5">
-                    <FiPhone className="text-green-dark" /> Phone Number
+                  <label
+                    htmlFor="phone-input"
+                    className="text-xs font-bold text-gray-900 flex items-center gap-1.5"
+                  >
+                    <FiPhone className="text-[#0A1F1C]" /> Phone Number
                   </label>
                   <input
+                    id="phone-input"
                     type="tel"
                     placeholder="+1 (555) 000-0000"
                     value={phone}
@@ -357,10 +369,10 @@ export default function QuotePage() {
                       setPhone(e.target.value);
                       if (errors.phone) setErrors({ ...errors, phone: null });
                     }}
-                    className={`w-full bg-gray-50/80 border rounded-xl px-3.5 py-3 text-xs sm:text-sm text-green-medium focus:outline-none font-semibold transition-colors ${
+                    className={`w-full bg-gray-50/80 border rounded-xl px-3.5 py-3 text-xs sm:text-sm text-gray-900 focus:outline-none font-semibold transition-colors ${
                       errors.phone
                         ? "border-red-400 bg-red-50/20"
-                        : "border-gray-200 focus:border-green-dark"
+                        : "border-gray-200 focus:border-[#0A1F1C]"
                     }`}
                   />
                   {errors.phone && (
@@ -370,23 +382,28 @@ export default function QuotePage() {
                   )}
                 </div>
 
-                <div className="space-y-1.5">
-                  <label className="text-xs font-bold text-green-medium flex items-center gap-1.5">
-                    <FiMapPin className="text-green-dark" /> Cleaning Address
+                <div className="space-y-1.5 sm:col-span-2">
+                  <label
+                    htmlFor="address-input"
+                    className="text-xs font-bold text-gray-900 flex items-center gap-1.5"
+                  >
+                    <FiMapPin className="text-[#0A1F1C]" /> Cleaning Location
+                    Address
                   </label>
                   <input
+                    id="address-input"
                     type="text"
-                    placeholder="123 Main St, Apt 4B, Chicago, IL"
+                    placeholder="123 Main St, Apt 4B, City, State, Zip"
                     value={address}
                     onChange={(e) => {
                       setAddress(e.target.value);
                       if (errors.address)
                         setErrors({ ...errors, address: null });
                     }}
-                    className={`w-full bg-gray-50/80 border rounded-xl px-3.5 py-3 text-xs sm:text-sm text-green-medium focus:outline-none font-semibold transition-colors ${
+                    className={`w-full bg-gray-50/80 border rounded-xl px-3.5 py-3 text-xs sm:text-sm text-gray-900 focus:outline-none font-semibold transition-colors ${
                       errors.address
                         ? "border-red-400 bg-red-50/20"
-                        : "border-gray-200 focus:border-green-dark"
+                        : "border-gray-200 focus:border-[#0A1F1C]"
                     }`}
                   />
                   {errors.address && (

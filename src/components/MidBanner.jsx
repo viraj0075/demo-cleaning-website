@@ -12,8 +12,10 @@ export default function MidBanner() {
           {/* Left Column: Image */}
           <div className="lg:col-span-6 relative h-64 sm:h-80 lg:h-auto min-h-80 overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=800"
-              alt="Professional vacuuming background"
+              src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&q=80&w=800"
+              alt="Sparkling clean interior space background"
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-[#0A1F1C]/30 mix-blend-multiply" />

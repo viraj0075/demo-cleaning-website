@@ -98,8 +98,15 @@ export default function Pricing() {
               {/* Selector Previews */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                 <div className="border border-gray-200/80 rounded-2xl p-3 bg-gray-50/70 flex items-center justify-between text-xs sm:text-sm font-bold text-gray-800">
-                  <span className="text-gray-500">Bedrooms</span>
+                  <label
+                    htmlFor="bedrooms-select"
+                    className="text-gray-700 font-bold"
+                  >
+                    Bedrooms
+                  </label>
                   <select
+                    id="bedrooms-select"
+                    aria-label="Select number of bedrooms"
                     value={bedrooms}
                     onChange={(e) => setBedrooms(e.target.value)}
                     className="bg-transparent border-none text-gray-950 font-black focus:outline-none cursor-pointer text-xs sm:text-sm text-right"
@@ -111,8 +118,15 @@ export default function Pricing() {
                   </select>
                 </div>
                 <div className="border border-gray-200/80 rounded-2xl p-3 bg-gray-50/70 flex items-center justify-between text-xs sm:text-sm font-bold text-gray-800">
-                  <span className="text-gray-500">Bathrooms</span>
+                  <label
+                    htmlFor="bathrooms-select"
+                    className="text-gray-700 font-bold"
+                  >
+                    Bathrooms
+                  </label>
                   <select
+                    id="bathrooms-select"
+                    aria-label="Select number of bathrooms"
                     value={bathrooms}
                     onChange={(e) => setBathrooms(e.target.value)}
                     className="bg-transparent border-none text-gray-950 font-black focus:outline-none cursor-pointer text-xs sm:text-sm text-right"
