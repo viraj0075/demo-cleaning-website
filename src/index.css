@@ -1,0 +1,98 @@
+@import "./assets/fonts/font-face.css";
+@import "tailwindcss";
+
+@theme {
+    --color-midnight: #0F172A;
+    --color-green-dark: #0F4C3A;
+    --color-green-medium: #1E6A4C;
+    --color-green-light: #B8F35A;
+    --color-cream: #F7FFF2;
+
+    --font-aspekta: "Aspekta", sans-serif;
+}
+
+html,
+body {
+    font-family: var(--font-aspekta);
+    overflow-x: hidden;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fafb;
+    color: #1f2937;
+    scroll-behavior: smooth;
+}
+
+/* Custom transitions and scrollbar */
+::selection {
+    background-color: var(--color-green-medium);
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c5c5c5;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input,
+select,
+textarea {
+    font-family: var(--font-aspekta);
+}
+
+/* Continuous scrolling marquee */
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-marquee {
+    display: flex;
+    animation: marquee 20s linear infinite;
+}
+
+.animate-marquee-slow {
+    display: flex;
+    animation: marquee 35s linear infinite;
+}
+
+.animate-marquee-slow:hover {
+    animation-play-state: paused;
+}
+
+/* Custom card shadow levels */
+.shadow-famic-sm {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-famic-md {
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.05), 0px 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+.shadow-famic-lg {
+    box-shadow: 0px 10px 15px -3px rgba(8, 31, 92, 0.05), 0px 4px 6px -2px rgba(8, 31, 92, 0.02);
+}
