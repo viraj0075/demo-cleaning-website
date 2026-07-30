@@ -139,7 +139,7 @@ export default function QuotePage() {
       <div className="pt-28 sm:pt-32 pb-16 sm:pb-20 bg-gray-50/50 min-h-screen flex items-center justify-center px-4">
         <div className="max-w-xl w-full bg-white rounded-2xl shadow-famic-lg border border-gray-100 p-6 sm:p-8 md:p-12 text-center space-y-6">
           <div className="bg-green-50 text-green-600 p-4 sm:p-6 rounded-2xl w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center mx-auto shadow-md">
-            <FiCheck className="h-8 w-8 sm:h-10 sm:w-10 stroke-[3]" />
+            <FiCheck className="h-8 w-8 sm:h-10 sm:w-10 stroke-3" />
           </div>
 
           <div className="space-y-2">
@@ -492,19 +492,19 @@ export default function QuotePage() {
             <div className="space-y-3 text-xs text-gray-500 font-semibold border-t border-gray-100 pt-4 sm:pt-5">
               <div className="flex items-center gap-2">
                 <div className="bg-green-50 text-green-600 p-1.5 rounded-xl flex-shrink-0">
-                  <FiCheck className="h-3.5 w-3.5 stroke-[3]" />
+                  <FiCheck className="h-3.5 w-3.5 stroke-3" />
                 </div>
                 <span>Free reschedule 24 hours prior</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="bg-green-50 text-green-600 p-1.5 rounded-xl flex-shrink-0">
-                  <FiCheck className="h-3.5 w-3.5 stroke-[3]" />
+                  <FiCheck className="h-3.5 w-3.5 stroke-3" />
                 </div>
                 <span>Certified green safe solutions</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="bg-green-50 text-green-600 p-1.5 rounded-xl flex-shrink-0">
-                  <FiCheck className="h-3.5 w-3.5 stroke-[3]" />
+                  <FiCheck className="h-3.5 w-3.5 stroke-3" />
                 </div>
                 <span>Fully vetted & trained staff</span>
               </div>

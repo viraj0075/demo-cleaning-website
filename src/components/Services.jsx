@@ -75,7 +75,7 @@ export default function Services() {
                         className="flex items-center gap-2.5 text-xs sm:text-sm text-gray-700 font-bold"
                       >
                         <span className="bg-lime-100 text-[#0A1F1C] p-1 rounded-full flex-shrink-0">
-                          <FiCheck className="h-3.5 w-3.5 stroke-[3]" />
+                          <FiCheck className="h-3.5 w-3.5 stroke-3" />
                         </span>
                         <span>{bullet}</span>
                       </div>

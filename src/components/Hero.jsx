@@ -10,7 +10,7 @@ export default function Hero() {
 
   return (
     <section className="relative overflow-hidden bg-[#0A1F1C] text-white">
-      <div className="pt-28 sm:pt-36 lg:pt-40 pb-16 sm:pb-20 text-center md:text-left">
+      <div className="pt-28 sm:pt-36 lg:pt-40 pb-16 sm:pb-20 text-center lg:text-left">
         <ContainerLayout>
           {/* Top Rating Badge */}
           <div className="flex items-center justify-center lg:justify-start gap-2 mb-6">

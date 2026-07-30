@@ -31,7 +31,7 @@ export default function WhyChoice() {
                 <div key={idx} className="flex gap-4 py-5 first:pt-0 last:pb-0">
                   <div className="shrink-0 pt-0.5">
                     <div className="bg-lime-400 text-gray-950 p-1.5 rounded-full flex items-center justify-center w-7 h-7 shadow-md shadow-lime-400/20">
-                      <FiCheck className="h-4 w-4 stroke-[3]" />
+                      <FiCheck className="h-4 w-4 stroke-3" />
                     </div>
                   </div>
                   <div>

@@ -94,20 +94,20 @@ export default function Navbar() {
               onClick={() => handleNavClick("home")}
             >
               <div className="p-1.5 rounded-xl text-white mr-2 shadow-md bg-white/10 border border-white/15 group-hover:scale-105 transition-transform">
-                <HiSparkles className="h-5 w-5 text-lime-400" />
+                <HiSparkles className="h-4 w-4 sm:h-5 sm:w-5 text-lime-400" />
               </div>
-              <span className="text-xl sm:text-2xl font-black text-white tracking-tight">
+              <span className="text-lg sm:text-xl md:text-2xl font-black text-white tracking-tight">
                 Cleanora <span className="text-lime-400">Cleaners</span>
               </span>
             </div>
 
             {/* Desktop Nav Links */}
-            <div className="hidden md:flex items-center space-x-1 lg:space-x-2">
+            <div className="hidden md:flex items-center space-x-1 sm:space-x-1.5 lg:space-x-2">
               {navLinks.map((link) => (
                 <button
                   key={link.id}
                   onClick={() => handleNavClick(link.id)}
-                  className="px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer text-white/90 hover:text-white hover:bg-white/10"
+                  className="px-2.5 sm:px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer text-white/90 hover:text-white hover:bg-white/10"
                 >
                   {link.name}
                 </button>
@@ -118,7 +118,7 @@ export default function Navbar() {
             <div className="hidden md:block">
               <Link
                 to="/quote"
-                className="inline-flex items-center justify-center px-6 sm:px-7 py-2.5 sm:py-3 text-xs sm:text-sm font-black rounded-full transition-all hover:scale-105 bg-lime-400 hover:bg-lime-300 text-gray-950 shadow-lg shadow-lime-400/20"
+                className="inline-flex items-center justify-center px-4 sm:px-6 py-2 sm:py-2.5 text-xs sm:text-sm font-black rounded-full transition-all hover:scale-105 bg-lime-400 hover:bg-lime-300 text-gray-950 shadow-lg shadow-lime-400/20"
               >
                 Book Now
               </Link>

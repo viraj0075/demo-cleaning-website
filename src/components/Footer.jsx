@@ -13,9 +13,9 @@ export default function Footer() {
     <footer className="bg-[#0A1F1C] text-white border-t border-white/10">
       <ContainerLayout>
         <div className="py-12 sm:py-16 lg:py-20">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 lg:gap-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-10">
             {/* Brand Col */}
-            <div className="sm:col-span-2 space-y-4 text-center sm:text-left flex flex-col items-center sm:items-start">
+            <div className="sm:col-span-2 lg:col-span-2 space-y-4 text-center sm:text-left flex flex-col items-center sm:items-start">
               <Link to="/" className="inline-flex items-center gap-2 group">
                 <div className="bg-white/10 p-2 rounded-xl text-white border border-white/15 group-hover:scale-105 transition-transform">
                   <HiSparkles className="h-5 w-5 text-lime-400" />
@@ -24,7 +24,7 @@ export default function Footer() {
                   Cleanora <span className="text-lime-400">Cleaners</span>
                 </span>
               </Link>
-              <p className="text-white/75 text-xs sm:text-sm leading-relaxed max-w-xs font-medium">
+              <p className="text-white/75 text-xs sm:text-sm leading-relaxed max-w-sm font-medium">
                 Connecting you with certified, vetted local cleaning
                 professionals. 100% satisfaction guaranteed for sparkling home &
                 office spaces.
@@ -123,7 +123,7 @@ export default function Footer() {
             </div>
 
             {/* Support / Contact Col */}
-            <div className="text-center sm:text-left">
+            <div className="text-center sm:text-left sm:col-span-2 lg:col-span-1">
               <h4 className="font-extrabold text-lime-400 text-xs sm:text-sm uppercase tracking-wider mb-4">
                 Contact Support
               </h4>

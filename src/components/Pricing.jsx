@@ -143,7 +143,7 @@ export default function Pricing() {
                 {basic.features.map((feat, fIdx) => (
                   <div key={fIdx} className="flex items-start gap-3">
                     <span className="p-1 rounded-full bg-lime-100 text-[#0A1F1C] mt-0.5 flex-shrink-0">
-                      <FiCheck className="h-3.5 w-3.5 stroke-[3]" />
+                      <FiCheck className="h-3.5 w-3.5 stroke-3" />
                     </span>
                     <span className="text-xs sm:text-sm font-semibold text-gray-700 leading-tight">
                       {feat}
@@ -211,7 +211,7 @@ export default function Pricing() {
                   {premium.features.map((feat, fIdx) => (
                     <div key={fIdx} className="flex items-start gap-3">
                       <span className="p-1 rounded-full bg-lime-400/20 text-lime-400 mt-0.5 flex-shrink-0">
-                        <FiCheck className="h-3.5 w-3.5 stroke-[3]" />
+                        <FiCheck className="h-3.5 w-3.5 stroke-3" />
                       </span>
                       <span className="text-xs sm:text-sm font-semibold text-white/90 leading-tight">
                         {feat}
