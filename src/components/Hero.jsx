@@ -20,10 +20,10 @@ export default function Hero() {
             </span>
           </div>
 
-          {/* 2-Column Header Row */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start mb-12 sm:mb-16">
+          {/* 2-Column Header Flexbox Row */}
+          <div className="flex flex-col lg:flex-row items-start justify-between gap-8 lg:gap-12 mb-12 sm:mb-16">
             {/* Left Giant Headline */}
-            <div className="lg:col-span-7">
+            <div className="flex-1 max-w-2xl">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.12]">
                 Bringing freshness <br />
                 to <span className="text-lime-400">every</span> little corner.
@@ -31,7 +31,7 @@ export default function Hero() {
             </div>
 
             {/* Right Description & Action Buttons */}
-            <div className="lg:col-span-5 space-y-6 lg:pt-2">
+            <div className="flex-1 max-w-lg space-y-6 lg:pt-2">
               <p className="text-white/80 text-sm sm:text-base leading-relaxed font-medium max-w-lg">
                 Experience meticulous cleaning that refreshes your home,
                 enhances comfort, and brings care into every corner.

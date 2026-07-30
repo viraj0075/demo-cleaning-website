@@ -1,5 +1,12 @@
 // Centralized constants and content data for the Cleaning Website
 
+export const NAV_LINKS = [
+  { name: "Services", id: "services" },
+  { name: "About Us", id: "about" },
+  { name: "Pricing", id: "pricing" },
+  { name: "FAQ", id: "faq" },
+];
+
 export const HERO_IMAGES_DATA = [
   {
     url: "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&q=80&w=800",

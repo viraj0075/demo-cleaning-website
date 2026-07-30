@@ -21,7 +21,7 @@ export default function Testimonials() {
     <section className="py-16 sm:py-24 bg-white" id="testimonials">
       <ContainerLayout>
         {/* Header with Navigation Buttons */}
-        <div className="flex flex-row items-end justify-between mb-10 sm:mb-14 gap-4">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 sm:mb-14 gap-6">
           <div className="space-y-3">
             <span className="bg-[#0A1F1C] text-lime-400 px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider inline-block shadow-sm">
               Testimonials
@@ -31,17 +31,17 @@ export default function Testimonials() {
             </h2>
           </div>
 
-          <div className="flex gap-2.5 shrink-0">
+          <div className="flex gap-2.5 shrink-0 self-end sm:self-auto">
             <button
               onClick={() => scroll("left")}
-              className="bg-gray-100 border border-gray-200 text-gray-900 hover:bg-[#0A1F1C] hover:text-lime-400 p-3 rounded-full transition-all duration-300 cursor-pointer shadow-sm"
+              className="bg-gray-100 border border-gray-200 text-gray-900 hover:bg-[#0A1F1C] hover:text-lime-400 p-3 rounded-full transition-all duration-300 cursor-pointer shadow-sm active:scale-95"
               aria-label="Scroll left"
             >
               <FiChevronLeft className="h-5 w-5" />
             </button>
             <button
               onClick={() => scroll("right")}
-              className="bg-gray-100 border border-gray-200 text-gray-900 hover:bg-[#0A1F1C] hover:text-lime-400 p-3 rounded-full transition-all duration-300 cursor-pointer shadow-sm"
+              className="bg-gray-100 border border-gray-200 text-gray-900 hover:bg-[#0A1F1C] hover:text-lime-400 p-3 rounded-full transition-all duration-300 cursor-pointer shadow-sm active:scale-95"
               aria-label="Scroll right"
             >
               <FiChevronRight className="h-5 w-5" />
