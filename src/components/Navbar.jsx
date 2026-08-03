@@ -89,7 +89,7 @@ export default function Navbar() {
 
   return (
     <div
-      className={`fixed top-3 sm:top-4 left-0 right-0 z-50 flex justify-center pointer-events-none transition-all duration-300 transform ${
+      className={`fixed top-3 left-0 right-0 z-50 flex justify-center pointer-events-none transition-all duration-300 transform ${
         visible ? "translate-y-0 opacity-100" : "-translate-y-24 opacity-0"
       }`}
       ref={headerRef}
@@ -98,8 +98,8 @@ export default function Navbar() {
         <nav
           className={`relative transition-all duration-300 rounded-2xl border ${
             isLightNav
-              ? "bg-white/95 backdrop-blur-xl border-gray-200/90 shadow-[0_10px_35px_rgba(0,0,0,0.18)] px-5 sm:px-8 py-3"
-              : "bg-transparent border-transparent shadow-none px-0 py-3"
+              ? "bg-white/95 backdrop-blur-xl border-gray-200/90 shadow-[0_10px_35px_rgba(0,0,0,0.18)] py-2 px-4"
+              : "bg-transparent border-transparent shadow-none px-2.5 md:px-0 py-3"
           }`}
         >
           <div className="flex items-center justify-between h-11 sm:h-12">
@@ -108,26 +108,12 @@ export default function Navbar() {
               className="shrink-0 flex items-center cursor-pointer group"
               onClick={() => handleNavClick("home")}
             >
-              <div
-                className={`p-1.5 rounded-xl mr-2 shadow-md transition-all group-hover:scale-105 ${
-                  isLightNav
-                    ? "bg-[#0A1F1C] text-lime-400 border border-[#0A1F1C]/20"
-                    : "bg-lime-400/15 text-lime-400 border border-lime-400/30 group-hover:bg-lime-400/25"
-                }`}
-              >
-                <HiSparkles className="h-4 w-4 sm:h-5 sm:w-5 text-lime-400" />
-              </div>
               <span
-                className={`text-lg sm:text-xl md:text-2xl font-black tracking-tight ${
-                  isLightNav ? "text-gray-950" : "text-white"
+                className={`text-lg sm:text-xl font-black uppercase ${
+                  isLightNav ? "text-green-medium" : "text-white"
                 }`}
               >
-                Cleanora{" "}
-                <span
-                  className={isLightNav ? "text-[#0A1F1C]" : "text-lime-400"}
-                >
-                  Cleaners
-                </span>
+                Cleaners
               </span>
             </div>
 
@@ -137,7 +123,7 @@ export default function Navbar() {
                 <button
                   key={link.id}
                   onClick={() => handleNavClick(link.id)}
-                  className={`px-2.5 md:px-3 lg:px-4 py-1.5 lg:py-2 rounded-xl text-xs md:text-sm lg:text-base xl:text-lg font-bold lg:font-extrabold transition-all cursor-pointer ${
+                  className={`px-2.5 md:px-3 lg:px-4 py-1.5 lg:py-2 rounded-xl text-xs md:text-sm lg:text-base font-bold lg:font-extrabold transition-all cursor-pointer ${
                     isLightNav
                       ? "text-gray-700 hover:text-gray-950 hover:bg-gray-100/80"
                       : "text-white/90 hover:text-lime-400 hover:bg-white/10"
