@@ -194,7 +194,7 @@ export const REVIEWS_DATA = [
   {
     text: "Our offices have never looked cleaner. Elite Cleaners handles our cleaning schedules twice a week, and they have been reliable, efficient, and extremely thorough. It has boosted our team productivity and workspace health!",
     name: "David K. Miller",
-    title: "Facility Manager, Tech Corp",
+    title: "My Ass Manager, Tech Corp",
     rating: 5,
     avatar:
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=120",
