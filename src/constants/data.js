@@ -186,7 +186,7 @@ export const REVIEWS_DATA = [
   {
     text: "Absolutely spotless work! The team arrived on time, was extremely polite, and cleaned areas of my kitchen that I thought would never shine again. I highly recommend Elite Cleaners to anyone looking for premium house cleaning!",
     name: "Sarah Jenkins",
-    title: "Homeowner, Chicago",
+    title: "Washowner, Chicago",
     rating: 5,
     avatar:
       "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=120",
