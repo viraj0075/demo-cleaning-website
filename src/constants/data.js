@@ -194,7 +194,7 @@ export const REVIEWS_DATA = [
   {
     text: "Our offices have never looked cleaner. Elite Cleaners handles our cleaning schedules twice a week, and they have been reliable, efficient, and extremely thorough. It has boosted our team productivity and workspace health!",
     name: "David K. Miller",
-    title: "My Ass Manager, Tech Corp",
+    title: "Asss. Manager, Tech Corp",
     rating: 5,
     avatar:
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=120",
@@ -202,7 +202,7 @@ export const REVIEWS_DATA = [
   {
     text: "Their customer service is outstanding. I had to reschedule my cleaning at the last minute, and they handled it without any cancellation fees. The cleaning crew did a fantastic job, especially on the bathrooms.",
     name: "Elena Rostova",
-    title: "Real shit Agent",
+    title: "Real estate Agent",
     rating: 5,
     avatar:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=120",
